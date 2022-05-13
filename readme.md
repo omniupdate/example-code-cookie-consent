@@ -9,3 +9,32 @@ The sample page makes use of Osano's cookie consent javascript library. It's an 
 You can visit their [download page](https://www.osano.com/cookieconsent/download/) and click "Start Coding" to open up their configuration form.
 
 If you are interested in the cookie consent code, you can find their GitHub repository here: [Osano Cookie Consent GitHub](https://github.com/osano/cookieconsent/).
+
+## Sample Code
+
+### CSS
+
+```html
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+```
+
+### JavaScript
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+<script>
+    window.cookieconsent.initialise({
+        "palette": {
+            "popup": {
+                "background": "#64386b",
+                "text": "#ffcdfd"
+            },
+            "button": {
+                "background": "#f8a8ff",
+                "text": "#3f0045"
+            }
+        },
+        "theme": "edgeless"
+    });
+</script>
+```
